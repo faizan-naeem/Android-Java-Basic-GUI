@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:background="@color/colorAccent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/back"></ImageView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginEnd="10dp"
+                android:drawableEnd="@drawable/cancel"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:background="@color/colorAccent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/pin"></ImageView>
+
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="55dp"
+                android:drawableEnd="@drawable/cancel"></EditText>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/crosshair"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:background="@drawable/underlinelayout">
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="55dp"
+                android:text="@string/Jobs"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:paddingTop="17dp"
+                android:paddingLeft="35dp"
+                android:background="@drawable/underline"></TextView>
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="55dp"
+                android:text="@string/Companies"
+                android:textColor="#00CCFF"
+                android:textSize="15sp"
+                android:paddingTop="15dp"
+                android:paddingLeft="5dp"></TextView>
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="55dp"
+                android:text="@string/Salaries"
+                android:textColor="#00CCFF"
+                android:textSize="15sp"
+                android:paddingTop="15dp"
+                android:paddingLeft="25dp"></TextView>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="+ CREATE SAVED SEARCH"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp"
+            android:textColor="#00CCFF"
+            android:drawableEnd="@drawable/slider"
+            android:background="@drawable/underlinelayout"></TextView>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="340dp"
+            android:layout_height="200dp"
+            android:background="@drawable/underlinelayout"
+            android:clickable="true"
+            android:id="@+id/job1">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:paddingLeft="5dp"
+                android:src="@drawable/fb"></ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Software Engineer"
+                    android:textColor="#00CCFF"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:drawableEnd="@drawable/heart"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Facebook"
+                    android:textSize="15sp"
+                    android:textColor="#000000"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="San Francisco, CA                       5d"
+                    android:textSize="15sp"
+                    android:textColor="#808080"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="$147K-$166K (Glassdoor Est.)"
+                    android:textSize="15sp"
+                    android:textColor="#808000"></TextView>
+                <Button
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Easy Apply"
+                    android:textSize="10sp"
+                    android:backgroundTint="#80808080"></Button>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="340dp"
+            android:layout_height="200dp"
+            android:background="@drawable/underlinelayout"
+            android:clickable="true"
+            android:id="@+id/job2">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:paddingLeft="5dp"
+                android:src="@drawable/fb"></ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Software Engineer"
+                    android:textColor="#00CCFF"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:drawableEnd="@drawable/heart"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Facebook"
+                    android:textSize="15sp"
+                    android:textColor="#000000"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="San Francisco, CA                       5d"
+                    android:textSize="15sp"
+                    android:textColor="#808080"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="$147K-$166K (Glassdoor Est.)"
+                    android:textSize="15sp"
+                    android:textColor="#808000"></TextView>
+                <Button
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Easy Apply"
+                    android:textSize="10sp"
+                    android:backgroundTint="#80808080"></Button>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
